@@ -1,8 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# A [Next.js](https://nextjs.org/) starter template project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). ✨
 
-## Getting Started
+## What's included? 🚀
 
-First, run the development server:
+This project comes pre-configured with the following tech:
+
+- [eslint-config-standard](https://github.com/standard/eslint-config-standard): JavaScript Standard Style
+- [eslint-plugin-tailwindcss](https://github.com/nuxt/eslint-plugin-tailwindcss): ESLint plugin for Tailwind CSS
+- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier): ESLint rules for Prettier integration
+- [Prettier](https://prettier.io/): Opinionated code formatter
+
+## Getting Started 🛠️
+
+To get started with this project, follow these steps:
+
+1. Install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extensions from the VSCode Marketplace.
+
+2. Run the development server:
 
 ```bash
 npm run dev
@@ -34,3 +47,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+```
+
+```
