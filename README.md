@@ -1,4 +1,4 @@
-# A [Next.js](https://nextjs.org/) starter template project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). ✨
+# A [Next.js](https://nextjs.org/) starter template project bootstrapped with [`nextjs13-starter-template`](https://github.com/rhyanvargas/nextjs13-starter-template). ✨
 
 ## What's included? 🚀
 
