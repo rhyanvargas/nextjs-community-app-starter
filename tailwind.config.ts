@@ -73,5 +73,10 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+  plugins: [
+    require("postcss-import"),
+    require("tailwindcss/nesting"),
+    require("tailwindcss-animate"),
+    require("@tailwindcss/typography"),
+  ],
 };
