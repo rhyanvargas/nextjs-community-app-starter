@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   title: "PickleUp!",
   description:
     "Join the ultimate pickleball community with PickleUP! Connect with local pickleball enthusiasts, create and join exciting pick-up games, and stay ahead of the game with top-rated equipment, exclusive discounts, and PickleUP Academy's latest tips and tricks.",
+  icons: {
+    icon: "/assets/images/site-logo.svg",
+  },
 };
 
 export default function RootLayout({
