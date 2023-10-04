@@ -34,6 +34,23 @@ pnpm dev
 bun dev
 ```
 
+## Authentication 🔒
+
+### Updating Public Routes
+
+```
+// ./middleware.ts
+//
+// This example protects all routes including api/trpc routes
+// Please edit this to allow other routes to be public as needed.
+// See https://clerk.com/docs/references/nextjs/auth-middleware for more information about
+// configuring your middleware
+
+export default authMiddleware({
+  publicRoutes: ["/"],
+});
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
