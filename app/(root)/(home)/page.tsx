@@ -1,9 +1,11 @@
-import { UserButton } from "@clerk/nextjs";
+import React from "react";
 
-export default function Home() {
-	return (
-		<div>
-			<UserButton afterSignOutUrl="/" />
-		</div>
-	);
-}
+const Home = () => {
+  return (
+    <div className="flex min-h-screen flex-col items-center justify-center py-2 dark:text-primary-100">
+      Home
+    </div>
+  );
+};
+
+export default Home;
