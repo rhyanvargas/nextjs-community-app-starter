@@ -43,7 +43,7 @@ export default function RootLayout({
             },
           }}
         >
-          <ThemeProvider>{children}</ThemeProvider>
+          <ThemeProvider attribute="class">{children}</ThemeProvider>
         </ClerkProvider>
       </body>
     </html>

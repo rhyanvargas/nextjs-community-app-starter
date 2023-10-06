@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { SignedIn, UserButton } from "@clerk/nextjs";
+import ThemePicker from "./ThemePicker";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,7 @@ const Navbar = () => {
           height={23}
         />
         <p className="h2-bold font-spaceGrotesk text-dark-100 dark:text-light-900 max-sm:hidden">
-          Pickle <span className="text-primary-500">UP!</span>
+          3D <span className="text-primary-500">Flow</span>
         </p>
       </Link>
       <div className="flex-between gap-5">
@@ -31,6 +32,7 @@ const Navbar = () => {
             }}
           />
         </SignedIn>
+        <ThemePicker />
       </div>
     </nav>
   );
