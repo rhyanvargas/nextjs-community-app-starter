@@ -1,26 +1,23 @@
 import { Button } from "@/components/ui/button";
-import { SignedIn, SignedOut } from "@clerk/nextjs";
+import { SignedOut } from "@clerk/nextjs";
 import Link from "next/link";
 import React from "react";
-import { SignOutButton } from "../primitives/SignOutButton";
 import Image from "next/image";
+import { buttonStyleVariants } from "@/constants";
 
 export const SignInOutButtonGroup = ({ isMobile = false }) => {
-	const buttonLabelStyles = isMobile ? "" : "hidden md:inline";
-	const buttonBaseSyle =
-		"small-medium min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none gap-2";
-	const buttonStyleVariants = {
-		primary: `${buttonBaseSyle} light-border-2 btn-tertiary text-dark400_light900`,
-		secondary: `${buttonBaseSyle} btn-secondary`,
-	};
+	const buttonLabelStyles = isMobile ? "" : "hidden md:flex";
 	const iconStyles = `h-4 w-4 invert-colors`;
+	const linkStyles = `${buttonStyleVariants.secondary} ${
+		isMobile ? "w-[186px]" : ""
+	} justify-start flex items-center`;
 
 	return (
 		<>
-			<section className="flex flex-col gap-3 pb-10">
+			<section className="flex flex-col gap-3 w-auto">
 				<SignedOut>
-					<Button asChild className={buttonStyleVariants.secondary}>
-						<Link href={"/sign-in"}>
+					<Button asChild>
+						<Link className={linkStyles} href={"/sign-in"}>
 							<Image
 								className={iconStyles}
 								src={"/assets/icons/sign-in.svg"}
@@ -34,12 +31,11 @@ export const SignInOutButtonGroup = ({ isMobile = false }) => {
 						</Link>
 					</Button>
 
-					<Button
-						asChild
-						variant={"outline"}
-						className={buttonStyleVariants.primary}
-					>
-						<Link href={"/sign-up"}>
+					<Button asChild variant={"outline"}>
+						<Link
+							className={`${linkStyles} ${buttonStyleVariants.secondary}`}
+							href={"/sign-up"}
+						>
 							<Image
 								className={iconStyles}
 								src={"/assets/icons/sign-up.svg"}
@@ -51,9 +47,6 @@ export const SignInOutButtonGroup = ({ isMobile = false }) => {
 						</Link>
 					</Button>
 				</SignedOut>
-				<SignedIn>
-					<SignOutButton isMobile />
-				</SignedIn>
 			</section>
 		</>
 	);

@@ -6,6 +6,14 @@ export const themes = [
 	{ value: "system", label: "System", icon: "/assets/icons/computer.svg" },
 ];
 
+export const buttonBaseSyle =
+	"small-medium min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none gap-2";
+
+export const buttonStyleVariants = {
+	primary: `${buttonBaseSyle} light-border-2 btn-tertiary text-dark400_light900`,
+	secondary: `btn-secondary ${buttonBaseSyle} `,
+};
+
 export const sidebarLinks: SidebarLink[] = [
 	{
 		imgURL: "/assets/icons/home.svg",
