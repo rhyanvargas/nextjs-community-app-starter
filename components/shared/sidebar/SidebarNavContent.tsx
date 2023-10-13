@@ -8,20 +8,21 @@ import React from "react";
 export const SidebarNavContent = ({ isMobile = false }) => {
 	const pathname = usePathname();
 	const buttonLabelStyles = isMobile ? "" : "hidden md:inline";
+	const buttonStyles = `${
+		isMobile
+			? "w-[186px] justify-start"
+			: "md:justify-start hidden sm:flex max-md:w-12"
+	}`;
 	return (
 		<>
-			<section className="flex h-full flex-col gap-6 pt-16 ">
+			<section className="flex h-full flex-col gap-6 pt-16 w-auto">
 				{sidebarLinks.map((item) => {
 					const isActive =
 						(pathname.includes(item.route) && item.route.length > 1) ||
 						pathname === item.route;
 
 					return (
-						<Button
-							className="md:justify-start w-full"
-							variant={"ghost"}
-							asChild
-						>
+						<Button className={buttonStyles} variant={"ghost"} asChild>
 							<Link
 								href={item.route}
 								className={`${

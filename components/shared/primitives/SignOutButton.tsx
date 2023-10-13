@@ -13,9 +13,11 @@ export const SignOutButton = ({
 	isMobile = false,
 }: LeftSideBarProps) => {
 	const { signOut } = useClerk();
-	const sideBarStyles = `flex justify-start gap-3 ${styles ? styles : ""}}`;
+	const buttonStyles = `${isMobile ? "flex max-w-[186px]" : ""} ${
+		styles ? styles : ""
+	} gap-3 justify-start`;
 	return (
-		<Button className={sideBarStyles} variant="ghost" onClick={() => signOut()}>
+		<Button className={buttonStyles} variant="ghost" onClick={() => signOut()}>
 			<Image
 				className={"invert-colors"}
 				src={"/assets/icons/logout.svg"}
