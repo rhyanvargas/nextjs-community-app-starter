@@ -7,7 +7,7 @@ import { buttonStyleVariants } from "@/constants";
 
 export const SignInOutButtonGroup = ({ isMobile = false }) => {
 	const buttonLabelStyles = isMobile ? "" : "hidden md:flex";
-	const iconStyles = `h-4 w-4 invert-colors md:hidden`;
+	const iconStyles = `${isMobile ? "hidden" : ""} invert-colors md:hidden`;
 	const linkStyles = `${buttonStyleVariants.secondary} ${
 		isMobile ? "w-[186px]" : ""
 	} justify-start flex items-center`;

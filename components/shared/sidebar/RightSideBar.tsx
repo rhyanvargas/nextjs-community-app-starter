@@ -6,7 +6,7 @@ import React from "react";
 const RightSideBar = () => {
 	const titleStyles = "px-2 font-semibold pb-4";
 	return (
-		<aside className="gap-10 pb-6 px-3 pt-32 hidden xl:flex flex-col fixed right-0 top-0 w-[266px] h-full background-light900_dark200 ">
+		<aside className="gap-10 pb-6 px-3 pt-32 hidden xl:flex flex-col sticky right-0 top-0 w-[266px] min-h-screen background-light900_dark200 ">
 			<section className="flex flex-col">
 				<h3 className={titleStyles}>Top Questions</h3>
 				{topQuestions.map((question, index) => (
