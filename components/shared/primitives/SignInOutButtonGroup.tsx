@@ -7,7 +7,7 @@ import { buttonStyleVariants } from "@/constants";
 
 export const SignInOutButtonGroup = ({ isMobile = false }) => {
 	const buttonLabelStyles = isMobile ? "" : "hidden md:flex";
-	const iconStyles = `h-4 w-4 invert-colors`;
+	const iconStyles = `h-4 w-4 invert-colors md:hidden`;
 	const linkStyles = `${buttonStyleVariants.secondary} ${
 		isMobile ? "w-[186px]" : ""
 	} justify-start flex items-center`;
@@ -17,10 +17,13 @@ export const SignInOutButtonGroup = ({ isMobile = false }) => {
 			<section className="flex flex-col gap-3 w-auto">
 				<SignedOut>
 					<Button asChild>
-						<Link className={linkStyles} href={"/sign-in"}>
+						<Link
+							className={`${buttonStyleVariants.primary} ${linkStyles}`}
+							href={"/sign-in"}
+						>
 							<Image
 								className={iconStyles}
-								src={"/assets/icons/sign-in.svg"}
+								src={"/assets/icons/account.svg"}
 								alt={"Log in"}
 								width={18}
 								height={18}

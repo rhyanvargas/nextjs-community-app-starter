@@ -22,7 +22,12 @@ export const SidebarNavContent = ({ isMobile = false }) => {
 						pathname === item.route;
 
 					return (
-						<Button className={buttonStyles} variant={"ghost"} asChild>
+						<Button
+							key={item}
+							className={buttonStyles}
+							variant={"ghost"}
+							asChild
+						>
 							<Link
 								href={item.route}
 								className={`${
