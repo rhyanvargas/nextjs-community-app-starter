@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Pill from "../primitives/Pill";
 
 const RightSideBar = () => {
 	const titleStyles = "px-2 font-semibold pb-4";
@@ -16,42 +17,16 @@ const RightSideBar = () => {
 			<section className="flex flex-col gap-y-3">
 				<h3 className={titleStyles}>Popular Tags</h3>
 				{tags.map((tag, index) => (
-					<PopularTagRow
-						key={tag.count + index}
-						tag={tag.name}
-						path={tag.path}
-						count={tag.count}
-					/>
+					<div className="flex justify-between items-center">
+						<Pill key={tag.count + index} text={tag.name} path={tag.path} />
+						<p className="text-xs mr-2 font-light">{tag.count}</p>
+					</div>
 				))}
 			</section>
 		</aside>
 	);
 };
 export default RightSideBar;
-
-export const PopularTagRow = ({
-	path,
-	tag,
-	count,
-}: {
-	path: string;
-	tag: string;
-	count: string;
-}) => (
-	<div className="flex justify-between items-center px-2">
-		<Button
-			className={`btn-tertiary min-h-fit h-auto px-4 py-2 w-auto`}
-			asChild
-		>
-			<Link href={`${path}`}>
-				<p className="text-light-500 text-xs uppercase mr-2 font-light">
-					{tag}
-				</p>
-			</Link>
-		</Button>
-		<p className="text-xs mr-2 font-light">{count}</p>
-	</div>
-);
 
 export const TopQuestionRow = ({ question }: { question: string }) => (
 	<Button className="h-auto px-2" asChild variant={"ghost"}>
