@@ -10,7 +10,7 @@ export const SidebarNavContent = ({ isMobile = false }) => {
 	const buttonLabelStyles = isMobile ? "" : "hidden md:inline";
 	const buttonStyles = `${
 		isMobile
-			? "w-[186px] justify-start"
+			? " w-full max-w-[190px] justify-start"
 			: "md:justify-start hidden sm:flex max-md:w-12"
 	}`;
 	return (
