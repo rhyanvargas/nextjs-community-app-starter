@@ -23,7 +23,7 @@ export const SidebarNavContent = ({ isMobile = false }) => {
 
 					return (
 						<Button
-							key={item}
+							key={item.label}
 							className={buttonStyles}
 							variant={"ghost"}
 							asChild

@@ -1,6 +1,10 @@
-import Pill from "@/components/shared/primitives/Pill";
+import Filter from "@/components/shared/filter/Filter";
 import SearchBar from "@/components/shared/search/SearchBar";
 import { Button } from "@/components/ui/button";
+
+import { HomePageFilters, QuestionFilters } from "@/constants/filters";
+import Image from "next/image";
+
 import React from "react";
 
 const Home = () => {
@@ -14,18 +18,7 @@ const Home = () => {
 			</div>
 			<div className="py-7 flex flex-col sm:flex-row md:flex-col gap-7 items-stretch">
 				<SearchBar placeholder="Search for questions here..." />
-				{/* TODO: Add Select dropdown filter */}
-				<div className="md:hidden"> SELECT</div>
-				<div className="items-center  hidden md:flex">
-					{filters.map((filter, index) => (
-						<Pill
-							key={filter.name + index}
-							path={filter.path}
-							text={filter.name}
-							size="large"
-						/>
-					))}
-				</div>
+				<Filter filterList={QuestionFilters} />
 			</div>
 		</>
 	);
