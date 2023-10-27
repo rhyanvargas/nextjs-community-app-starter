@@ -18,7 +18,6 @@ const Home = () => {
 			</div>
 			<div className="py-7 flex flex-col sm:flex-row md:flex-col gap-7 items-stretch">
 				<SearchBar placeholder="Search for questions here..." />
-				{/* TODO: CONVERT TO SEPERATE COMPONENT*/}
 				<Filter filterList={QuestionFilters} />
 			</div>
 		</>
