@@ -1,3 +1,4 @@
+import CardQuestion from "@/components/shared/card-question/CardQuestion";
 import Filter from "@/components/shared/filter/Filter";
 import SearchBar from "@/components/shared/search/SearchBar";
 import { Button } from "@/components/ui/button";
@@ -19,6 +20,9 @@ const Home = () => {
 			<div className="py-7 flex flex-col sm:flex-row md:flex-col gap-7 items-stretch">
 				<SearchBar placeholder="Search for questions here..." />
 				<Filter filterList={QuestionFilters} />
+			</div>
+			<div className="flex flex-col items-start gap-6">
+				<CardQuestion />
 			</div>
 		</>
 	);
