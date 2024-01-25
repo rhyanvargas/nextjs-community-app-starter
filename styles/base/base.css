@@ -1,7 +1,10 @@
 @tailwind base;
 
 @layer base {
-  body {
-    font-family: "Inter", sans-serif;
-  }
+	body {
+		font-family: "Inter", sans-serif;
+	}
+	h3 {
+		@apply font-semibold font-inter text-xl;
+	}
 }
