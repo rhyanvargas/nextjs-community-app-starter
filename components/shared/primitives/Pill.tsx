@@ -10,16 +10,18 @@ interface PillProps {
 
 const Pill = ({ path, text, size = "base" }: PillProps) => {
 	const buttonStyles = {
-		large: "btn-tertiary min-h-fit h-auto px-6 py-3 w-auto",
 		base: "btn-tertiary min-h-fit h-auto px-4 py-2 w-auto",
+		large: "btn-tertiary min-h-fit h-auto px-6 py-3 w-auto",
+	};
+	const textStyles = {
+		base: "text-light-500 text-xs capitalize mr-2 font-medium leading-none",
+		large: "text-light-500 text-sm capitalize mr-2 font-medium leading-none",
 	};
 	return (
-		<div className="flex justify-between items-center px-2">
+		<div className="flex justify-between items-center pr-2">
 			<Button className={`${buttonStyles[size]}`} asChild>
 				<Link href={`${path}`}>
-					<p className="text-light-500 text-xs uppercase mr-2 font-light">
-						{text}
-					</p>
+					<p className={`${textStyles[size]}`}>{text}</p>
 				</Link>
 			</Button>
 		</div>
