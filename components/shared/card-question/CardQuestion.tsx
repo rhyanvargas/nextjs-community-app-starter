@@ -1,33 +1,9 @@
 import React from "react";
 import Pill from "../primitives/Pill";
 import Image from "next/image";
+import { CardQuestionI } from "@/types";
 
-const CardQuestion = ({
-	question = "The Lightning Component c:LWC_PizzaTracker generated invalid output for field status. Error How to solve this",
-	tags = ["Nextjs", "tailwind"],
-}) => {
-	const author = {
-		name: "John Doe",
-		icon: "https://i.pravatar.cc/20",
-		lastAsked: "• asked 2 days ago",
-	};
-	const stats = [
-		{
-			name: "votes",
-			icon: "/assets/icons/like.png",
-			value: "200",
-		},
-		{
-			name: "answers",
-			icon: "/assets/icons/answers.png",
-			value: "5",
-		},
-		{
-			name: "views",
-			icon: "/assets/icons/eye.png",
-			value: "5.2k",
-		},
-	];
+const CardQuestion = ({ question, tags, stats, author }: CardQuestionI) => {
 	const spanStyles = {
 		base: "inline-block align-middle text-sm",
 		capital: "inline-block align-middle text-sm capitalize",
