@@ -20,8 +20,6 @@ const Home = () => {
 			/>
 		);
 	});
-	//TODO: remove after testing
-	// const CardList = null;
 	return (
 		<>
 			<div className="flex pt-16 dark:text-primary-100 flex-col xs:flex-row justify-between items-center">
