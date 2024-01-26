@@ -1,8 +1,9 @@
+import { NoResult } from "@/components/shared/NoResult";
 import CardQuestion from "@/components/shared/card-question/CardQuestion";
 import Filter from "@/components/shared/filter/Filter";
 import SearchBar from "@/components/shared/search/SearchBar";
 import { Button } from "@/components/ui/button";
-import { CardQuestions } from "@/constants";
+import { CardQuestions, NoResultInfoQuestions } from "@/constants";
 import { QuestionFilters } from "@/constants/filters";
 import React from "react";
 
@@ -19,6 +20,8 @@ const Home = () => {
 			/>
 		);
 	});
+	//TODO: remove after testing
+	// const CardList = null;
 	return (
 		<>
 			<div className="flex pt-16 dark:text-primary-100 flex-col xs:flex-row justify-between items-center">
@@ -31,7 +34,9 @@ const Home = () => {
 				<SearchBar placeholder="Search for questions here..." />
 				<Filter filterList={QuestionFilters} />
 			</div>
-			<div className="flex flex-col items-start gap-6">{CardList}</div>
+			<div className="flex flex-col items-start gap-6 justify-center">
+				{CardList ? CardList : <NoResult {...NoResultInfoQuestions} />}
+			</div>
 		</>
 	);
 };
