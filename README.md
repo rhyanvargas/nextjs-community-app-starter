@@ -1,4 +1,4 @@
-# A [Next.js](https://nextjs.org/) starter template project bootstrapped with [`nextjs13-starter-template`](https://github.com/rhyanvargas/nextjs13-starter-template). ✨
+# A Community Application starter template project bootstrapped with [`nextjs13-starter-template`](https://github.com/rhyanvargas/nextjs13-starter-template). ✨
 
 ## What's included? 🚀
 
