@@ -1,5 +1,100 @@
-import { SidebarLink } from "@/types";
+import { CardQuestionI, NoResultProps, SidebarLink } from "@/types";
 
+export const NoResultInfoQuestions: NoResultProps = {
+	imageDark: "/assets/images/dark-illustration.png",
+	imageLight: "/assets/images/light-illustration.png",
+	title: "There's no question to show",
+	description:
+		"Be the first to break the silence! 🚀 Ask a Question and kickstart the discussion. our query could be the next big thing others learn from. Getinvolved! 💡",
+	buttonText: "Ask Question",
+	buttonLink: "/ask-question",
+};
+export const CardQuestions: Array<CardQuestionI> = [
+	{
+		_id: "1",
+		question:
+			"The Lightning Component c:LWC_PizzaTracker generated invalid output for field status. Error How to solve this",
+		tags: ["Nextjs", "tailwind"],
+		author: {
+			name: "John Doe",
+			icon: "https://i.pravatar.cc/20",
+			lastAsked: "• asked 2 days ago",
+		},
+		stats: [
+			{
+				name: "votes",
+				icon: "/assets/icons/like.png",
+				value: "200",
+			},
+			{
+				name: "answers",
+				icon: "/assets/icons/answers.png",
+				value: "5",
+			},
+			{
+				name: "views",
+				icon: "/assets/icons/eye.png",
+				value: "5.2k",
+			},
+		],
+	},
+	{
+		_id: "2",
+		question:
+			"The Lightning Component c:LWC_PizzaTracker generated invalid output for field status. Error How to solve this",
+		tags: ["Nextjs", "tailwind"],
+		author: {
+			name: "John Doe",
+			icon: "https://i.pravatar.cc/20",
+			lastAsked: "• asked 2 days ago",
+		},
+		stats: [
+			{
+				name: "votes",
+				icon: "/assets/icons/like.png",
+				value: "200",
+			},
+			{
+				name: "answers",
+				icon: "/assets/icons/answers.png",
+				value: "5",
+			},
+			{
+				name: "views",
+				icon: "/assets/icons/eye.png",
+				value: "5.2k",
+			},
+		],
+	},
+	{
+		_id: "3",
+		question:
+			"The Lightning Component c:LWC_PizzaTracker generated invalid output for field status. Error How to solve this",
+		tags: ["Nextjs", "tailwind"],
+		author: {
+			name: "John Doe",
+			icon: "https://i.pravatar.cc/20",
+			lastAsked: "• asked 2 days ago",
+		},
+		stats: [
+			{
+				name: "votes",
+				icon: "/assets/icons/like.png",
+				value: "200",
+			},
+			{
+				name: "answers",
+				icon: "/assets/icons/answers.png",
+				value: "5",
+			},
+			{
+				name: "views",
+				icon: "/assets/icons/eye.png",
+				value: "5.2k",
+			},
+		],
+	},
+];
 export const themes = [
 	{ value: "light", label: "Light", icon: "/assets/icons/sun.svg" },
 	{ value: "dark", label: "Dark", icon: "/assets/icons/moon.svg" },
