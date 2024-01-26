@@ -1,5 +1,14 @@
-import { CardQuestionI, SidebarLink } from "@/types";
+import { CardQuestionI, NoResultProps, SidebarLink } from "@/types";
 
+export const NoResultInfoQuestions: NoResultProps = {
+	imageDark: "/assets/images/dark-illustration.png",
+	imageLight: "/assets/images/light-illustration.png",
+	title: "There's no question to show",
+	description:
+		"Be the first to break the silence! 🚀 Ask a Question and kickstart the discussion. our query could be the next big thing others learn from. Getinvolved! 💡",
+	buttonText: "Ask Question",
+	buttonLink: "/ask-question",
+};
 export const CardQuestions: Array<CardQuestionI> = [
 	{
 		_id: "1",

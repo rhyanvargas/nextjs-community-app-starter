@@ -1,4 +1,13 @@
 import { BADGE_CRITERIA, CardQuestions } from "@/constants";
+
+export interface NoResultProps {
+	imageDark: string;
+	imageLight: string;
+	title: string;
+	description: string;
+	buttonText: string;
+	buttonLink: string;
+}
 export type Author = {
 	name: string;
 	icon: string;
