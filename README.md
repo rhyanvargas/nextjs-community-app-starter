@@ -8,6 +8,7 @@ This project comes pre-configured with the following tech:
 - [eslint-plugin-tailwindcss](https://github.com/nuxt/eslint-plugin-tailwindcss): ESLint plugin for Tailwind CSS
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier): ESLint rules for Prettier integration
 - [Prettier](https://prettier.io/): Opinionated code formatter
+- [ClerkJs](https://clerk.com/): Uesr Management & Authentication
 
 🔌 Tailwind Plugins:
 
