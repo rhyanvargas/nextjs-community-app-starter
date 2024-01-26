@@ -8,12 +8,15 @@ This project comes pre-configured with the following tech:
 - [eslint-plugin-tailwindcss](https://github.com/nuxt/eslint-plugin-tailwindcss): ESLint plugin for Tailwind CSS
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier): ESLint rules for Prettier integration
 - [Prettier](https://prettier.io/): Opinionated code formatter
-- [ClerkJs](https://clerk.com/): Uesr Management & Authentication
+- [ClerkJs](https://clerk.com/): Uesr Management & Authentication [see `Authentication` section](#authentication)
+
+🎨 UI / Design
+- [Shadcn UI](https://ui.shadcn.com/): Light and fully-customizable UI component library
 
 🔌 Tailwind Plugins:
 
 - [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin): Easy type control (ie. `prose`)
-- [tailwindcss-animate](https://github.com/jamiebuilds/tailwindcss-animate): Shorter tailwind clasess to animate
+- [tailwindcss-animate](https://github.com/jamiebuilds/tailwindcss-animate): Shorter tailwind classes to animate
 - [postcss-import](https://tailwindcss.com/docs/using-with-preprocessors#build-time-imports): Cleaner CSS organization
 - [tailwindcss/nesting](https://tailwindcss.com/docs/using-with-preprocessors#nesting): Detects `@apply` and `@screen` tailwind directives within `imported` files
 
@@ -35,8 +38,7 @@ pnpm dev
 bun dev
 ```
 
-## Authentication 🔒
-
+## Authentication
 ### Updating Public Routes
 
 ```
